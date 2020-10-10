@@ -1,0 +1,8 @@
+formulahendry.auto-rename-tag
+coenraads.bracket-pair-colorizer
+pkief.material-icon-theme
+zhuangtongfa.material-theme
+ms-vscode-remote.remote-wsl
+angular.ng-template
+esbenp.prettier-vscode
+johnpapa.angular2
