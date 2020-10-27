@@ -1,0 +1,97 @@
+{
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+
+  // If enabled, selections are automatically copied to your clipboard.
+  "copyOnSelect": true,
+  // If enabled, formatted data is also copied to your clipboard
+  "copyFormatting": false,
+
+  "profiles": {
+    "defaults": {
+      "fontFace": "Fira Code",
+      "fontWeight": "normal",
+      "colorScheme": "Atom"
+    },
+    "list": [
+      {
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "name": "Windows PowerShell",
+        "commandline": "powershell.exe",
+        "hidden": false
+      },
+      {
+        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+        "name": "Command Prompt",
+        "commandline": "cmd.exe",
+        "hidden": false
+      },
+      {
+        "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+        "hidden": false,
+        "name": "Ubuntu-20.04",
+        "source": "Windows.Terminal.Wsl"
+      },
+      {
+          "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+          "hidden": false,
+          "name": "Azure Cloud Shell",
+          "source": "Windows.Terminal.Azure"
+      }
+    ]
+  },
+
+  // Add custom color schemes to this array.
+  // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
+  "schemes": [
+    {
+      "name": "Atom",
+      "black": "#000",
+      "red": "#fd5ff1",
+      "green": "#87c38a",
+      "yellow": "#ffd7b1",
+      "blue": "#85befd",
+      "purple": "#b9b6fc",
+      "cyan": "#85befd",
+      "white": "#e0e0e0",
+      "brightBlack": "#ffffff",
+      "brightRed": "#fd5ff1",
+      "brightGreen": "#94fa36",
+      "brightYellow": "#f5ffa8",
+      "brightBlue": "#96cbfe",
+      "brightPurple": "#b9b6fc",
+      "brightCyan": "#85befd",
+      "brightWhite": "#e0e0e0",
+      "background": "#161719",
+      "foreground": "#c5c8c6"
+    }
+  ],
+
+  // Add custom actions and keybindings to this array.
+  "actions": [
+    {
+      "command": {
+        "action": "copy",
+        "singleLine": false
+      },
+      "keys": "ctrl+c"
+    },
+    {
+      "command": "paste",
+      "keys": "ctrl+v"
+    },
+    {
+      "command": "find",
+      "keys": "ctrl+shift+f"
+    },
+    // Press Alt+Shift+D to open a new pane.
+    {
+      "command": {
+        "action": "splitPane",
+        "split": "auto",
+        "splitMode": "duplicate"
+      },
+      "keys": "alt+shift+d"
+    }
+  ]
+}

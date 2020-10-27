@@ -1,6 +1,6 @@
 {
   //Configures font family and font size
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "JetBrains Mono",
   "editor.fontSize": 16,
   "editor.fontWeight": "400",
 
@@ -8,7 +8,6 @@
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.letterSpacing": 0.7,
-  "terminal.integrated.shell.osx": "zsh",
   "terminal.integrated.lineHeight": 0.6,
 
   //Search exclusions for cache and module files
@@ -35,7 +34,7 @@
   "editor.formatOnSave": false,
   "editor.cursorBlinking": "blink",
   "editor.cursorSmoothCaretAnimation": true,
-  "editor.lineHeight": 22,
+  "editor.lineHeight": 24,
   "editor.tabSize": 2,
   "editor.useTabStops": false,
   "editor.wordWrap": "wordWrapColumn",
@@ -75,7 +74,10 @@
   "files.associations": {
     "*.mdx": "markdown"
   },
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "Material Theme Ocean High Contrast",
   "javascript.updateImportsOnFileMove.enabled": "never",
-  "typescript.updateImportsOnFileMove.enabled": "never"
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
