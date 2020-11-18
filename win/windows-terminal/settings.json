@@ -1,29 +1,23 @@
 {
   "$schema": "https://aka.ms/terminal-profiles-schema",
-  "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+  "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}", // Put the guid from the Linux distro here.
 
-  // If enabled, selections are automatically copied to your clipboard.
   "copyOnSelect": true,
-  // If enabled, formatted data is also copied to your clipboard
   "copyFormatting": false,
 
   "profiles": {
     "defaults": {
-      "fontFace": "Fira Code",
+      "fontFace": "JetBrains Mono",
       "fontWeight": "normal",
-      "colorScheme": "Atom"
+      "colorScheme": "MaterialDarker",
+      "cursorShape": "filledBox",
+      "cursorColor": "#8f93a2"
     },
     "list": [
       {
         "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
         "name": "Windows PowerShell",
         "commandline": "powershell.exe",
-        "hidden": false
-      },
-      {
-        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-        "name": "Command Prompt",
-        "commandline": "cmd.exe",
         "hidden": false
       },
       {
@@ -42,28 +36,27 @@
   },
 
   // Add custom color schemes to this array.
-  // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
   "schemes": [
     {
-      "name": "Atom",
-      "black": "#000",
-      "red": "#fd5ff1",
-      "green": "#87c38a",
-      "yellow": "#ffd7b1",
-      "blue": "#85befd",
-      "purple": "#b9b6fc",
-      "cyan": "#85befd",
-      "white": "#e0e0e0",
-      "brightBlack": "#ffffff",
-      "brightRed": "#fd5ff1",
-      "brightGreen": "#94fa36",
-      "brightYellow": "#f5ffa8",
-      "brightBlue": "#96cbfe",
-      "brightPurple": "#b9b6fc",
-      "brightCyan": "#85befd",
-      "brightWhite": "#e0e0e0",
-      "background": "#161719",
-      "foreground": "#c5c8c6"
+      "name": "MaterialDarker",
+      "black": "#000000",
+      "red": "#ff5370",
+      "green": "#c3e88d",
+      "yellow": "#ffcb6b",
+      "blue": "#82aaff",
+      "purple": "#c792ea",
+      "cyan": "#89ddff",
+      "white": "#ffffff",
+      "brightBlack": "#545454",
+      "brightRed": "#ff5370",
+      "brightGreen": "#c3e88d",
+      "brightYellow": "#ffcb6b",
+      "brightBlue": "#82aaff",
+      "brightPurple": "#c792ea",
+      "brightCyan": "#89ddff",
+      "brightWhite": "#ffffff",
+      "background": "#212121",
+      "foreground": "#eeffff"
     }
   ],
 
@@ -84,7 +77,6 @@
       "command": "find",
       "keys": "ctrl+shift+f"
     },
-    // Press Alt+Shift+D to open a new pane.
     {
       "command": {
         "action": "splitPane",
@@ -92,6 +84,27 @@
         "splitMode": "duplicate"
       },
       "keys": "alt+shift+d"
-    }
+    },
+    {
+      "command": "closeTab",
+      "keys": "ctrl+w"
+    },
+    {
+      "command": {
+        "action": "newTab",
+        "profile": "Ubuntu-20.04"
+      },
+      "keys": "ctrl+t"
+    },
+    { "command": { "action": "switchToTab", "index": 0 }, "keys": "ctrl+1" }, 
+    { "command": { "action": "switchToTab", "index": 1 }, "keys": "ctrl+2" },
+    { "command": { "action": "switchToTab", "index": 2 }, "keys": "ctrl+3" },
+    { "command": { "action": "switchToTab", "index": 3 }, "keys": "ctrl+4" },
+    { "command": { "action": "switchToTab", "index": 4 }, "keys": "ctrl+5" },
+    { "command": { "action": "switchToTab", "index": 5 }, "keys": "ctrl+6" },
+    { "command": { "action": "switchToTab", "index": 6 }, "keys": "ctrl+7" },
+    { "command": { "action": "switchToTab", "index": 7 }, "keys": "ctrl+8" },
+    { "command": { "action": "switchToTab", "index": 8 }, "keys": "ctrl+9" }
+    
   ]
 }
