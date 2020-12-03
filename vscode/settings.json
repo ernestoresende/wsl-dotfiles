@@ -5,7 +5,7 @@
   "editor.fontWeight": "400",
 
   //Integrated terminal configurations
-  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontSize": 16,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.letterSpacing": 0.7,
   "terminal.integrated.lineHeight": 0.6,
@@ -34,7 +34,7 @@
   "editor.formatOnSave": false,
   "editor.cursorBlinking": "blink",
   "editor.cursorSmoothCaretAnimation": true,
-  "editor.lineHeight": 24,
+  "editor.lineHeight": 25,
   "editor.tabSize": 2,
   "editor.useTabStops": false,
   "editor.wordWrap": "wordWrapColumn",
@@ -74,10 +74,15 @@
   "files.associations": {
     "*.mdx": "markdown"
   },
-  "workbench.colorTheme": "Material Theme Ocean High Contrast",
+  "workbench.colorTheme": "Material Theme Ocean",
   "javascript.updateImportsOnFileMove.enabled": "never",
   "typescript.updateImportsOnFileMove.enabled": "never",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "files.autoSave": "off"
 }
