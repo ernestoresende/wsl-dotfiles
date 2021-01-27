@@ -5,16 +5,12 @@ export OSH=/home/ernesto/.oh-my-bash
 # it'll load a random theme each time that oh-my-bash is loaded.
 OSH_THEME="agnoster"
 
-completions=(
-)
-
 # Which aliases would you like to load? (aliases can be found in ~/.oh-my-bash/aliases/*)
 # Custom aliases may be added to ~/.oh-my-bash/custom/aliases/
 # Example format: aliases=(vagrant composer git-avh)
 # Add wisely, as too many aliases slow down shell startup.
 aliases=(
   general
-  misc
 )
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-bash/plugins/*)
@@ -42,7 +38,6 @@ export PATH=$PATH:$ANDROID_HOME/cmdline-tools/tools:$PATH
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/tools/bin:$PATH
 export PATH=$PATH:$ANDROID_HOME/platform-tools:$PATH
 
-export WSL_HOST=$(tail -1 /etc/resolv.conf | cut -d' ' -f2)
-
 # Uncomment this whenever you need to use ADB on Windows side to run Android applications on AVD's.
+# export WSL_HOST=$(tail -1 /etc/resolv.conf | cut -d' ' -f2)
 # export ADB_SERVER_SOCKET=tcp:$WSL_HOST:5037
